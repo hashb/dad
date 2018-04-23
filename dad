@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+offline_joke() {
+
+	echo -e "I had terrible internet connection on my farm "
+	echo -e "till I moved the modem to the barn."
+	echo -e "Now I have stable wifi."
+	return 0
+}
+
+curl https://icanhazdadjoke.com/ 2>/dev/null || echo $(offline_joke)
+echo
